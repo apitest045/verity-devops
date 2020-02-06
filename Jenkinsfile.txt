@@ -10,4 +10,14 @@ stage('Clean') {
 }
 //Code ends for Stage Clean 
 
+//Code Startes for stage PMD
+
+stage('PMD') {
+steps {
+sh 'mvn site'
+}
+}
+
+//Code ends for Stage PMD
+
 }}
