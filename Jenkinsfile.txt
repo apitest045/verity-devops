@@ -20,4 +20,17 @@ sh 'mvn site'
 
 //Code ends for Stage PMD
 
+
+
+//Code Startes for stage Compile
+
+stage('Compile') {
+steps {
+sh 'mvn compile'
+}
+}
+
+//Code ends for Stage Compile
+
+
 }}
