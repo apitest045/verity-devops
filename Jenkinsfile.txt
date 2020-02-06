@@ -32,5 +32,22 @@ sh 'mvn compile'
 
 //Code ends for Stage Compile
 
+//Code Startes for stage Unit Test
+
+stage('Unit Test') {
+steps {
+sh 'mvn test'
+      }
+
+post {
+ always {
+    junit 'target/surefire-reports/*.xml'
+        }
+      }
+}
+//Code ends for Stage Unit Test
+
+
+
 
 }}
